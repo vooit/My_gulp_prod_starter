@@ -1,0 +1,1 @@
+$(function(){console.log("poo"),$(".draggable").draggable({grid:[20,20],appendTo:"#droppable",containment:"window",cursor:"move",revertDuration:100,revert:"invalid",helper:"clone"}),$("#droppable").droppable({accept:".draggable",drop:function(e,o){o.helper.clone().appendTo("#droppable")}})});

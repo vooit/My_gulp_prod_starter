@@ -1,0 +1,12 @@
+body {
+  background-color: blue;
+  min-height: 100vh; }
+
+.draggable {
+  width: 90px;
+  height: 80px;
+  border: red 1px solid; }
+
+#droppable {
+  height: 140px;
+  border: black 1px solid; }
