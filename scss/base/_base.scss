@@ -12,19 +12,36 @@ body {
 #droppable {
   height: 800px;
   border: black 1px solid;
-  background-image: url("/img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("/img/background.jpg") center no-repeat;
+
+  background-size: 100% auto;
 }
 
-.draggable {
-  width: 90px;
-  height: 80px;
-  border: red 1px solid;
-  img {
-    width: 100%;
-    height:auto;
-    display: block;
+#storage {
+  display: flex;
+  .box {
+    width: 30%;
+    position: relative;
+    .draggable {
+      display: inline-block;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .box.full-width {
+    width: 70%;
+    .box__upper {
+      display: flex;
+      justify-content: center;
+    }
+    .box__lower {
+
+    }
   }
 }
+
+
+
 

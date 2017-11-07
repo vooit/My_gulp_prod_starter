@@ -8,15 +8,27 @@ body {
 #droppable {
   height: 800px;
   border: black 1px solid;
-  background-image: url("/img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: url("/img/background.jpg") center no-repeat;
+  background-size: 100% auto; }
 
-.draggable {
-  width: 90px;
-  height: 80px;
-  border: red 1px solid; }
-  .draggable img {
-    width: 100%;
-    height: auto;
-    display: block; }
+#storage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #storage .box {
+    width: 30%;
+    position: relative; }
+    #storage .box .draggable {
+      display: inline-block; }
+      #storage .box .draggable img {
+        width: 100%;
+        height: auto; }
+  #storage .box.full-width {
+    width: 70%; }
+    #storage .box.full-width .box__upper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
