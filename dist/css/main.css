@@ -7,6 +7,17 @@ body {
 * {
   color: white; }
 
+.counter {
+  background-color: #33939f;
+  list-style-type: none;
+  width: 160px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px; }
+  .counter li {
+    margin: 0;
+    text-align: center; }
+
 #droppable {
   height: 800px;
   border: black 1px solid;
@@ -16,7 +27,9 @@ body {
 #storage {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  border: black 1px solid;
+  padding: 20px; }
   #storage .box {
     width: 30%;
     position: relative; }

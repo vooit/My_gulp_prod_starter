@@ -24,7 +24,8 @@ $(function () {
             $("#droppable .draggable").addClass("item");
             $(".item").removeClass("ui-draggable draggable");
             $('.item').draggable({
-                containment: 'parent'
+                containment: 'parent',
+                grid: [ 2, 2 ]
             });
         }
     });
